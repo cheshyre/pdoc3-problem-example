@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 <meta name="generator" content="pdoc 0.7.2" />
-<title>some_package API documentation</title>
-<meta name="description" content="Some package …" />
+<title>some_package.min_working_example API documentation</title>
+<meta name="description" content="Module docstring …" />
 <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
 <link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
@@ -17,80 +17,121 @@
 <main>
 <article id="content">
 <header>
-<h1 class="title">Module <code>some_package</code></h1>
+<h1 class="title">Module <code>some_package.min_working_example</code></h1>
 </header>
 <section id="section-intro">
-<p>Some package.</p>
-<p>Provides:</p>
-<ol>
-<li>A brief example of a bug in pydoc3 docstring parsing.</li>
-</ol>
-<h2 id="how-to-use-the-documentation">How to use the documentation</h2>
-<p>Documentation is available in the form of docstrings provided with the code.</p>
+<p>Module docstring.</p>
+<p>Some additional text.</p>
+<h2 id="class-abc">class ABC</h2>
+<p>This header creates the problem.</p>
+<h2 id="class-def">class <a title="some_package.min_working_example.DEF" href="#some_package.min_working_example.DEF"><code>DEF</code></a></h2>
+<p>This header does not create a problem.</p>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
-<pre><code class="python">&#34;&#34;&#34;Some package.
+<pre><code class="python">&#34;&#34;&#34;Module docstring.
 
-Provides:
+Some additional text.
 
-1. A brief example of a bug in pydoc3 docstring parsing.
+class ABC
+---------
 
-How to use the documentation
-----------------------------
+This header creates the problem.
 
-Documentation is available in the form of docstrings provided with the code.
+class `DEF`
+-----------
+
+This header does not create a problem.
 
 &#34;&#34;&#34;
 from __future__ import absolute_import
 from __future__ import unicode_literals
 
-from some_package import error1
-from some_package import error2
-from some_package import min_working_example
+
+__all__ = [&#34;ABC&#34;, &#34;DEF&#34;]
 
 
-#  __all__ = [&#34;error1, error2&#34;]</code></pre>
+class ABC:
+    &#34;&#34;&#34;ABC class docstring.&#34;&#34;&#34;
+
+    def __init__(self):
+        &#34;&#34;&#34;Construct object.&#34;&#34;&#34;
+        self.name = &#34;ABC&#34;
+
+class DEF:
+    &#34;&#34;&#34;DEF class docstring.&#34;&#34;&#34;
+
+    def __init__(self):
+        &#34;&#34;&#34;Construct object.&#34;&#34;&#34;
+        self.name = &#34;DEF&#34;</code></pre>
 </details>
 </section>
 <section>
-<h2 class="section-title" id="header-submodules">Sub-modules</h2>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
 <dl>
-<dt><code class="name"><a title="some_package.error1" href="error1.html">some_package.error1</a></code></dt>
+<dt id="some_package.min_working_example.ABC"><code class="flex name class">
+<span>class <span class="ident">ABC</span></span>
+</code></dt>
 <dd>
-<section class="desc"><p>Module with basic errors to be used to define module specific errors …</p></section>
+<section class="desc"><p>ABC class docstring.</p>
+<p>Construct object.</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class ABC</code></pre>
+</details>
 </dd>
-<dt><code class="name"><a title="some_package.error2" href="error2.html">some_package.error2</a></code></dt>
+<dt id="some_package.min_working_example.DEF"><code class="flex name class">
+<span>class <span class="ident">DEF</span></span>
+</code></dt>
 <dd>
-<section class="desc"><p>Module with basic errors to be used to define module specific errors …</p></section>
-</dd>
-<dt><code class="name"><a title="some_package.min_working_example" href="min_working_example.html">some_package.min_working_example</a></code></dt>
-<dd>
-<section class="desc"><p>Module docstring …</p></section>
+<section class="desc"><p>DEF class docstring.</p>
+<p>Construct object.</p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class DEF:
+    &#34;&#34;&#34;DEF class docstring.&#34;&#34;&#34;
+
+    def __init__(self):
+        &#34;&#34;&#34;Construct object.&#34;&#34;&#34;
+        self.name = &#34;DEF&#34;</code></pre>
+</details>
 </dd>
 </dl>
-</section>
-<section>
-</section>
-<section>
-</section>
-<section>
 </section>
 </article>
 <nav id="sidebar">
 <h1>Index</h1>
 <div class="toc">
 <ul>
-<li><a href="#how-to-use-the-documentation">How to use the documentation</a></li>
+<li><a href="#class-abc">class ABC</a></li>
+<li><a href="#class-def">class DEF</a></li>
 </ul>
 </div>
 <ul id="index">
-<li><h3><a href="#header-submodules">Sub-modules</a></h3>
+<li><h3>Super-module</h3>
 <ul>
-<li><code><a title="some_package.error1" href="error1.html">some_package.error1</a></code></li>
-<li><code><a title="some_package.error2" href="error2.html">some_package.error2</a></code></li>
-<li><code><a title="some_package.min_working_example" href="min_working_example.html">some_package.min_working_example</a></code></li>
+<li><code><a title="some_package" href="index.html">some_package</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="some_package.min_working_example.ABC" href="#some_package.min_working_example.ABC">ABC</a></code></h4>
+</li>
+<li>
+<h4><code><a title="some_package.min_working_example.DEF" href="#some_package.min_working_example.DEF">DEF</a></code></h4>
+</li>
 </ul>
 </li>
 </ul>

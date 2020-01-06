@@ -15,6 +15,7 @@ from __future__ import unicode_literals
 
 from some_package import error1
 from some_package import error2
+from some_package import min_working_example
 
 
 #  __all__ = ["error1, error2"]
